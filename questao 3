@@ -1,0 +1,32 @@
+programa {
+  funcao inicio() {
+
+    real salario, soma = 0, maior = 0
+    inteiro f, filhos = 0, c = 0
+
+    para(inteiro i = 1; i <= 5; i++) {
+
+      escreva("Salario: ")
+      leia(salario)
+
+      escreva("Filhos: ")
+      leia(f)
+
+      soma += salario
+      filhos += f
+
+      se(salario > maior) {
+        maior = salario
+      }
+
+      se(salario <= 100) {
+        c++
+      }
+    }
+
+    escreva("\nMedia salario: ", soma/5)
+    escreva("\nMedia filhos: ", filhos/5.0)
+    escreva("\nMaior salario: ", maior)
+    escreva("\nPercentual ate 100: ", c*100.0/5, "%")
+  }
+}
