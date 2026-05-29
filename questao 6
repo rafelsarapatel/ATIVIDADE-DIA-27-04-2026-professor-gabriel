@@ -1,0 +1,18 @@
+programa {
+  funcao inicio() {
+
+    inteiro numero, maior = -999999, menor = 999999
+
+    para(inteiro i = 1; i <= 5; i++) {
+      escreva("digite um numero: ")
+
+      leia(numero)
+
+      se(numero > maior) maior = numero
+      se(numero < menor) menor = numero
+    }
+
+    escreva("Maior numero: ", maior)
+    escreva("\nMenor numero: ", menor)
+  }
+}
