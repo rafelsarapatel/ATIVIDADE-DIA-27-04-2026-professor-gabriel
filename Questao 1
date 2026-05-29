@@ -1,0 +1,32 @@
+programa {
+  funcao inicio() {
+
+    inteiro matriculaa
+    real nota
+
+    para(inteiro i = 1; i <= 75; i++) {
+
+      escreva("\nMatricula: ")
+      leia(matriculaa)
+
+      escreva("Nota: ")
+      leia(nota)
+
+      se(nota >= 0 e nota <= 4.9) {
+        escreva("Conceito D\n")
+      }
+      senao se(nota <= 6.9) {
+        escreva("Conceito C\n")
+      }
+      senao se(nota <= 8.9) {
+        escreva("Conceito B\n")
+      }
+      senao {
+        escreva("Conceito A\n")
+      }
+
+      escreva("Matricula: ", matriculaa)
+      escreva("\nNota: ", nota, "\n")
+    }
+  }
+}
