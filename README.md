@@ -1,0 +1,1 @@
+# ATIVIDADE-DIA-27-04-2026-professor-gabriel
